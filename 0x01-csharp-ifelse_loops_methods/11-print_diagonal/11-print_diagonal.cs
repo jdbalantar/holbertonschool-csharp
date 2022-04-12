@@ -5,14 +5,17 @@ namespace _11_print_diagonal
     class Line
     {
         public static void PrintDiagonal(int length){
-            int space = 0;
+            int i, j;
 
-            for(int i = 0; i < length; i++){
-                for (var j = 0; j < length; j++)
+            for (i = 0; i < length; i++)
+            {
+                for (j = 0; j < length; j++)
                 {
-                    Console.WriteLine("\\");
+                    if (i > j)
+                        Console.Write(" ");
                 }
-                
+                Console.Write("\\");
+                Console.Write("\n");
             }
         }
     }
