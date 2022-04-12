@@ -6,7 +6,7 @@ namespace _2_print_alphabet
     {
         static void Main(string[] args)
         {
-            for (char c = 'a'; c < 'z'; c++)
+            for (char c = 'a'; c <= 'z'; c++)
                 Console.Write(c);
         }
     }
