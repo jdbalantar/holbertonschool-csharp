@@ -11,12 +11,10 @@ namespace _6_print_comb2
                 for (int j = 0; j < 10; j++)
                 {
                     if(i < j){
-                        
-                        Console.Write($"{i}{j}");
                         if(i == 8 && j == 9)
-                            Console.Write("\n");
+                            Console.Write($"{i}{j}\n");
                         else
-                            Console.Write(", ");
+                            Console.Write($"{i}{j}, ");
                     }                    
                 }
             }
