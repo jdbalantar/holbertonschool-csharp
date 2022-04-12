@@ -14,9 +14,9 @@ namespace _6_print_comb2
                         
                         Console.Write($"{i}{j}");
                         if(i == 8 && j == 9)
-                            Console.Write(' ');
+                            Console.Write('\n');
                         else
-                            Console.Write("\n");
+                            Console.Write(", ");
                     }                    
                 }
             }
