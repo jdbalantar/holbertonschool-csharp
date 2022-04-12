@@ -8,14 +8,10 @@ namespace _5_print_comb
         {
             for (int i = 0; i <= 99; i++)
             {
-                if(i < 10)
-                    Console.Write($"0{i}");
-                if(i >= 10)
-                    Console.Write(i);
                 if(i < 99)
-                    Console.Write(", ");     
-                else
-                    Console.Write('\n');
+                    Console.Write($"{i:D2}, ");
+                if(i == 99)
+                    Console.Write($"{i:D2}\n");
             }
         }
     }
