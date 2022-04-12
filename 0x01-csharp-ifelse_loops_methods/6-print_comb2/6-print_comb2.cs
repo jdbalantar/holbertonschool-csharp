@@ -12,10 +12,11 @@ namespace _6_print_comb2
                 {
                     if(i < j){
                         
-                        if(i <= 8 && j < 9 || i >= 0 && j <= 9)
-                            Console.Write($"{i}{j}, ");
+                        Console.Write($"{i}{j}");
                         if(i == 8 && j == 9)
-                            Console.Write($"{i}{j}\n");
+                            Console.Write('\n');
+                        else
+                            Console.Write(", ");
                     }                    
                 }
             }
