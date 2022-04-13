@@ -20,10 +20,11 @@ namespace _0_print_array
                 
             for (int i = 0; i < size; i++)
             {
-                array[i] = i;
+                
                 Console.Write(array[i]);
                 if(i < size - 1)
                     Console.Write(' ');
+                array[i] = i;
             }
             Console.WriteLine();
             return array;
