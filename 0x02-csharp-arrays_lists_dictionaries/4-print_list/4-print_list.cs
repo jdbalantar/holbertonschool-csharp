@@ -7,6 +7,10 @@ namespace _4_print_list
     {
         public static List<int> CreatePrint(int size)
         {
+            if(size <= 0){
+                Console.WriteLine("Size cannot be negative");
+                return null;;
+            }
             var NewList = new List<int>();
             for (int i = 0; i < size; i++){
                 NewList.Add(i);
