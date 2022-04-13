@@ -2,7 +2,7 @@
 
 namespace _0_print_array
 {
-    class Arreglo
+    class Array
     {
         public static int[] CreatePrint(int size){
             if(size == 0)
