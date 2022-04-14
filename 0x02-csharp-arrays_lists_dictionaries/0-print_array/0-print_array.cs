@@ -4,7 +4,8 @@ class Array
 {
     public static int[] CreatePrint(int size)
     {
-        int[] array;
+        int[] new_array;
+        int i;
 
         if (size < 0)
         {
@@ -12,11 +13,24 @@ class Array
             return null;
         }
 
-        array = new int[size];
+        new_array = new int[size];
 
-        for (int i = 0; i < size; i++)
-            array[i] = i;
-        Console.WriteLine("{0}", String.Join(" ", array));
-        return array;
+        if (size == 0)
+        {
+            Console.Write("\n");
+            return new_array;
+        }
+
+        for (i = 0; i < size; i++)
+        {
+            new_array[i] = i;
+            Console.Write(new_array[i]);
+            if (i < size - 1)
+                Console.Write(" ");
+                            
+            
+        }
+        Console.Write("\n");
+        return new_array;
     }
 }
