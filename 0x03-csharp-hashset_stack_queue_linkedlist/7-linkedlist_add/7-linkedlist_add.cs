@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 
-class LList
+namespace _7_linkedlist_add
 {
-    public static LinkedListNode<int> Add(LinkedList<int> myLList, int n)
+    class Program
     {
-        myLList.AddFirst(n);
-        return (myLList.First);
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
     }
 }
