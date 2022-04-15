@@ -5,10 +5,22 @@ class List
 {
     public static List<int> DifferentElements(List<int> list1, List<int> list2)
     {
-        var Lista1 = Lista1.FindAll(elem => !Lista2.Contains(elem));
-        var Lista2 = Lista2.FindAll(elem => !Lista1.Contains(elem));
-        Lista1.AddRange(Lista2);
-        Lista1.Sort();
-        return Lista1;
+        var myList = new List<int>();
+        foreach (int itemList1 in list1)
+        {
+            if (list2.Contains(itemList1))
+                continue;
+            else
+                myList.Add(itemList1);
+        }
+        foreach (int itemList2 in list2)
+        {
+            if (list1.Contains(itemList2))
+                continue;
+            else
+                myList.Add(itemList2);
+        }
+        myList.Sort();
+        return(myList);
     }
 }
