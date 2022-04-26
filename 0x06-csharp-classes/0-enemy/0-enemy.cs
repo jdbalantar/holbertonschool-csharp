@@ -1,6 +1,4 @@
-﻿using Enemies;
-
-namespace _0_enemy
+﻿namespace Enemies
 {
     /// <summary> Empty Class Zombie </summary>
     public class Zombie 
