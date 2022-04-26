@@ -1,5 +1,8 @@
 ﻿using System;
+
 enum Rating
 {
-    Good, Great, Excellent
+    Good,
+    Great,
+    Excellent
 }
