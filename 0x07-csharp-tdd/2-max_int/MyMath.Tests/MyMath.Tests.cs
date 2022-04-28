@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace MyMath.Tests
 {
+    [TestFixture]
     public class Tests
     {
         [Test]
