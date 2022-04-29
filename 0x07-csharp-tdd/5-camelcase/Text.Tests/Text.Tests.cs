@@ -8,6 +8,7 @@ namespace Text.Tests
         [TestCase("HowAreYou?", ExpectedResult = 2)]
         [TestCase("IAmStudentOfHolbertonSchool", ExpectedResult = 5)]
         [TestCase("IAmProggramer", ExpectedResult = 2)]
+        [TestCase("IAMProggramer", ExpectedResult = 2)]
         public int IsUpper(string str)
         {
             int cant = Str.CamelCase(str);

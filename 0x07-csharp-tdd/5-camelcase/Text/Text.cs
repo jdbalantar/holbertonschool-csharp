@@ -18,7 +18,11 @@ namespace Text
             for(int i = 1; i < s.Length; i++)
             {
                 if (Char.IsUpper(s[i]))
+                {
+                    if ((Char.IsUpper(s[i + 1])) && (Char.IsUpper(s[i])) || (Char.IsUpper(s[i])) && (Char.IsUpper(s[i - 1])))
+                        i++;
                     count++;
+                }
             }
             return count;
         }
