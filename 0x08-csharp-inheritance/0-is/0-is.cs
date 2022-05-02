@@ -4,6 +4,7 @@
     {
         if (obj.GetType() == typeof(int))
             return true;
-        return false;
+        else
+            return false;
     }
 }
