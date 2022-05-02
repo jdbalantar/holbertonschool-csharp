@@ -2,9 +2,8 @@
 {
     public static bool IsOfTypeInt(object obj)
     {
-        if (obj.GetType() == typeof(int))
+        if (obj is int)
             return true;
-        else
-            return false;
+        return false;
     }
 }
